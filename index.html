@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/main.styl">
+  <title>LTTC</title>
+</head>
+<body>
+  <h1>Listen to the crime</h1>
+  <div id="app">
+    <div class="police">
+      <div class="btn" @click="setRadio('http://stream.scansf.com:8000/scansf.996xt')">
+        SFPD Southern, Central, Tenderloin, Park, Northern
+      </div>
+      <div class="btn" @click="setRadio('http://stream.scansf.com:8000/scansf.hp')">
+        SFPD Bayview, Mission, Richmond, Ingleside, Taraval
+      </div>
+      <div class="btn" @click="setRadio('http://stream.scansf.com:8000/scansf.sffd')">
+        SFFD/EMS
+      </div>
+    </div>
+    <div class="music">
+      <div class="btn" @click="setMusic('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/300494469&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true')">
+        Lofi Hip-Hop
+      </div>
+      <div class="btn" @click="setMusic('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/270473197&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true')">
+        Chillout
+      </div>
+    </div>
+    <div class="control">
+      <div class="btn" @click="play">Play</div>
+      <div class="btn" @click="pause">Pause</div>
+      <div class="btn" @click="next">Next</div>
+    </div>
+    <audio :src="radio" autoplay id="music"></audio>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" :src="music"></iframe>
+  </div>
+  <script src="./src/api.js"></script>
+  <script src="./src/main.js"></script>
+</body>
+</html>

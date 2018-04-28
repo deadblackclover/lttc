@@ -1,0 +1,22 @@
+{
+  "name": "live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "api": "^1.0.0",
+    "parcel-bundler": "^1.7.1"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "vue": "^2.5.16"
+  }
+}
