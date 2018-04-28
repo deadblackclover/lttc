@@ -1,4 +1,6 @@
 import Vue from 'vue/dist/vue.js'
+import '../src/main.styl'
+import '../src/api.js'
 
 new Vue({
   el: '#app',
