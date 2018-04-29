@@ -13,11 +13,12 @@ body
   background-image url('https://picsum.photos/1440/900?random')
   font-family Arial
 
+a, a:visited, a:active, a:hover
+  text-decoration none
+  color black
+  font-family Kaushan
+
 h1
-  background-color white
-  box-shadow 0 0 10px black
-  width 200px
-  padding 10px
   font-family Kaushan
 
 iframe
@@ -25,7 +26,12 @@ iframe
   position absolute
   top 0
 
-.police, .music, .control
+#app
+  display flex
+  flex-direction row
+  justify-content space-between
+
+.block
   margin-top 20px
   background-color white
   box-shadow 0 0 10px black
