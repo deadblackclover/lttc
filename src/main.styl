@@ -42,12 +42,11 @@ iframe
   display flex
   flex-direction row
   justify-content center
-
-.control div
-  background-repeat no-repeat
-  width 35px
-  height 35px
-
+  div
+    background-repeat no-repeat
+    width 35px
+    height 35px
+    
 .play:hover, .pause:hover, .next:hover
   animation btnh 1s ease
 
@@ -59,6 +58,12 @@ iframe
 
 .next
   background-image url('../src/img/forward.png')
+
+.vol
+  display flex
+  flex-direction row
+  input
+    width 80%
 
 .btn
   margin 5px

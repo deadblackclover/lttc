@@ -16,6 +16,14 @@
         <div class="pause btn" @click="pause"></div>
         <div class="next btn" @click="next"></div>
       </div>
+      <div class="block">
+        <div class="vol">
+          R:<input min="0" max="100" step="1" type="range" v-model="volR" @change="setVolR">
+        </div>
+        <div class="vol">
+          M:<input min="0" max="100" step="1" type="range" v-model="volM" @change="setVolM">
+        </div>
+      </div>
       <div class="block author">
         Open-Source project by
         <a href="https://github.com/deadblackclover" target="_blank">DEADBLACKCLOVER</a>
@@ -25,22 +33,25 @@
     </div>
     <div class="right">
       <div class="block police" id="police">
-        <div class="btn" @click="setRadio('http://stream.scansf.com:8000/scansf.996xt', $event)">
+        <div class="btn" @click="setRadio('SFPD1', $event)">
           SFPD Southern, Central, Tenderloin, Park, Northern
         </div>
-        <div class="btn active" @click="setRadio('http://stream.scansf.com:8000/scansf.hp', $event)">
+        <div class="btn active" @click="setRadio('SFPD2', $event)">
           SFPD Bayview, Mission, Richmond, Ingleside, Taraval
         </div>
-        <div class="btn" @click="setRadio('http://stream.scansf.com:8000/scansf.sffd', $event)">
+        <div class="btn" @click="setRadio('SFFD', $event)">
           SFFD/EMS
         </div>
       </div>
       <div class="block music" id="sc">
-        <div class="btn" @click="setMusic('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/300494469&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', $event)">
+        <div class="btn" @click="setMusic('lofi', $event)">
           Lofi Hip-Hop
         </div>
-        <div class="btn active" @click="setMusic('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/270473197&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', $event)">
+        <div class="btn active" @click="setMusic('chill', $event)">
           Chillout
+        </div>
+        <div class="btn" @click="setMusic('trance', $event)">
+          Trance
         </div>
       </div>
     </div>
