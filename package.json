@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/deadblackclover/lttc"
+    "url": "https://gitlab.com/deadblackclover/lttc.git"
   },
   "bugs": {
-    "url": "https://github.com/deadblackclover/lttc/issues"
+    "url": "https://gitlab.com/deadblackclover/lttc/issues"
   },
   "author": "DEADBLACKCLOVER <asocio@protonmail.com>",
   "license": "GPL-3.0",
