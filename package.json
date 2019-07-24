@@ -23,7 +23,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "api": "^1.0.0",
-    "parcel-bundler": "^1.7.1"
+    "parcel-bundler": "^1.10.0"
   },
   "devDependencies": {
     "stylus": "^0.54.5",
