@@ -12,6 +12,11 @@ body
   margin 0
   background-image url('https://picsum.photos/1440/900?random')
   font-family Arial
+  @media (max-width: 450px)
+    display flex
+    flex-direction row
+    justify-content center
+    align-item center
 
 a, a:visited, a:active, a:hover
   text-decoration none
@@ -23,6 +28,7 @@ h1
 
 iframe
   visibility hidden
+  display none
   position absolute
   top 0
 
@@ -30,13 +36,18 @@ iframe
   display flex
   flex-direction row
   justify-content space-between
+  @media (max-width: 450px)
+    flex-direction column
 
 .block
   margin-top 20px
   background-color white
-  box-shadow 0 0 10px black
   width 200px
   padding 10px
+  @media (max-width: 450px)
+    margin-top 0px
+  @media (min-width: 450px)
+    box-shadow 0 0 10px black
 
 .control
   display flex
@@ -71,5 +82,10 @@ iframe
     text-shadow 0 0 5px #c3c3c3
 
 .active
+  font-weight bold
   &:before
     content '* '
+
+.author
+  @media (max-width: 450px)
+    display none
